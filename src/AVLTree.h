@@ -340,7 +340,7 @@ class AVLTree {
                     if (parent->GetKey() < current->GetKey()) {
                         parent->SetRight(current->GetLeft());
                     } else {
-                        parent->SetRight(current->GetLeft());
+                        parent->SetLeft(current->GetLeft());
                     }
                 }
 
