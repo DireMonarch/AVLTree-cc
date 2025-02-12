@@ -414,7 +414,7 @@ class AVLTree {
                 }
             }
 
-            current = my_stack.pop();
+            current = my_stack.top(); my_stack.pop();
             while (current != nullptr) {
                 current->CalculateHeight();
                 if (current->GetBalanceFactor() > 1) {
